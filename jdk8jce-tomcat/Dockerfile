@@ -2,7 +2,7 @@ FROM 1132053388/base:jdk8-jce
 MAINTAINER "sunfit.cn"
 
 #配置tomcat
-WORKDIR ~
+WORKDIR /root
 COPY apache-tomcat-8.0.52.tar.gz .
 RUN tar -zxvf apache-tomcat-8.0.52.tar.gz && mv apache-tomcat-8.0.52 tomcat-8.0.52
 RUN rm -rf apache-tomcat-8.0.52.tar.gz
