@@ -2,6 +2,7 @@ FROM 1132053388/base:jdk8-jce
 MAINTAINER "sunfit.cn"
 
 #时区设置
+apt-get install -y sed
 sed -i 's/Etc\/UTC/Asia\/Shanghai/' /etc/timezone
 
 #配置tomcat
